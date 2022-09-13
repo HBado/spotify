@@ -7,7 +7,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  height: 100vh;
+  color: white;
+}
+.inner-container{
+  height: calc( 100vh - 96px ); /* 96 = bottom container height */
+  display: flex;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+logo {
+  width: 20px; height: 10px;
 }

@@ -1,0 +1,9 @@
+.bottom-container {
+    background-color: #282828;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}

@@ -1,0 +1,42 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+.searchbar,.btn btn-outline-success, .profile {
+    width: 200px;
+    height: 40px;
+    border-radius: 6px;
+    opacity: .5;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+.profile img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.profile span {
+    margin-left: 8px;
+}
+.searchbar {
+    border: 1px solid white;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.149);
+    text-indent: 30px;
+}
+.searchbar span {
+    margin-left: 8px;
+}
+.searchbar svg {
+    width: 30px;
+    height: 30px;
+}
+.searchbar + button {
+    margin-top: 10px;
+    margin-left: 8px;
+    align-items: center;
+}
