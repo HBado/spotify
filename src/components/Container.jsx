@@ -9,7 +9,7 @@ export default function Container({data}) {
     let dataset = [...data.allPlaylists, ...data.recentlyPlayed, ...data.recommended]
     dataset = dataset.filter(music=>music.name.toLowerCase().includes(e.target.value.toLowerCase()))
 
-    if (e.target.value == '') setSearchData(false) // no result
+    if (e.target.value === '') setSearchData(false) // no result
     else setSearchData(dataset) // set results
   }
 
@@ -21,9 +21,9 @@ export default function Container({data}) {
         searchData
         ? <PlayList wrap={true} listName={"Search results"} list={searchData} />
         : <>
-          <PlayList listName={"All Playlists"} list={data.allPlaylists} />
-          <PlayList listName={"Recently Played"} list={data.recentlyPlayed} />
-          <PlayList listName={"Recommended"} list={data.recommended} />
+          <PlayList wrap={true} listName={"Çalma Listeleri"} list={data.allPlaylists} />
+          <PlayList wrap={true} listName={"Yakın Zamanda Oynatılanlar"} list={data.recentlyPlayed} />
+          <PlayList wrap={true} listName={"Önerilenler"} list={data.recommended} />
         </>
       }
     </main>

@@ -21,13 +21,19 @@ aside {
     margin: 20px;
 }
 
-.playlists {
-    margin-top: 200px;
+
+
+.playlists ul{
+    font-size: 16px;
+    margin-top: 180px;
 }
 .playlists ul li{
     margin: 5px;
     margin-left: 20px;
     display: flex;
+}
+.playlists ul li:hover {
+    color: white;
 }
 img {width:"20px" 
     height="20px"};

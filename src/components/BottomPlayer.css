@@ -4,6 +4,49 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color:white;
+    padding: 0 40px;
+    gap: 30px;
+}
+.progress-container {
+    flex: 1;
+}
+.progress-container > .controller-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.progress-container > .controller-container svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+} 
+.progress-container .bar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.progress-container .bar-wrapper .bar {
+    width: 80%;
+    height: 6px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.281);
+    position: relative;
+}
+.progress-container .bar-wrapper .bar::before {
+    content: "";
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border-radius: 4px;
+    background-color: white;
+}
+.progress-container .bar-wrapper span {
+    font-size: 15px;
+    opacity: .6;
 }

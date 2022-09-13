@@ -6,7 +6,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+::selection{
+  background-color: red;
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 3px;
+}
 #root {
   display: flex;
   flex-direction: column;

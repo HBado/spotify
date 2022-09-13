@@ -14,7 +14,7 @@ export default function Header({ onSearch }) {
       </div>
 
       <div className='profile'>
-        <img src={require('../assets/images/huseyin.jpeg')}/>
+        <img src={require('../assets/images/huseyin.jpeg')} alt="huseyin"/>
         <span>Hüseyin Bariş Yaşık</span>
       </div>
     </header>
