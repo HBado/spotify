@@ -1,3 +1,12 @@
+#Readme
+I used node v14.0.0 (64-bit)  version
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
